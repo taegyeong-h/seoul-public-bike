@@ -1,0 +1,24 @@
+[seoul_api_global]
+base_url = "http://openapi.seoul.go.kr:8088"
+api_key = "SEOUL_API_KEY"
+
+[seoul_api_fact]
+service_name = "tbCycleRentUseDayInfo"
+
+[seoul_api_dim]
+service_name = "bikeList"
+
+# 4. 대상 데이터베이스 설정
+[database]
+db_type = "postgres"
+user = "Local_DB_USER"
+password = "Local_DB_PASSWORD"
+host = "127.0.0.1"
+port = 5432
+database_name = "db_name"
+
+[aws]
+bucket_name = "S3_BUCKET_NAME"
+access_key_id = "AWS_ACCESS_KEY"
+secret_access_key = "AWS_SECRET_KEY"
+region = "ap-northeast-2"

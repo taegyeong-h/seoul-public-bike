@@ -1,0 +1,18 @@
+# 1. 설정 파일 (진짜 API 키/비밀번호가 들어가는 파일 차단)
+config/dev.toml
+config/*.toml
+
+# 단, 예시 파일(example)은 깃허브에 올라가도록 예외 허용
+!config/dev.example.toml
+
+# 2. 파이썬 가상환경 및 캐시 파일
+.venv/
+__pycache__/
+*.pyc
+
+# 3. 대용량 파케트(Parquet) 데이터 파일 및 데이터 레이크 폴더
+*.parquet
+datalake/
+
+# 4. 파이참 IDE 설정 폴더
+.idea/
