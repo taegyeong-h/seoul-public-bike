@@ -55,5 +55,3 @@ select
 , NULLIF(rnum, '')::INTEGER
 , CURRENT_TIMESTAMP -- 💡 3. SELECT 절에서는 DEFAULT 없이 이렇게만 쓰면 현재 시간이 들어갑니다!
 FROM {source_table};
-
-
